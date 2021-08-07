@@ -1,0 +1,2578 @@
+/*html{*/
+/*scroll-behavior: smooth;*/
+/*}*/
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container, .container-sm, .container-md, .container-lg, .container-xl {
+    max-width: 1200px !important;
+}
+
+@font-face {
+    font-family: 'Montserrat-Regular';
+    src: url("../fonts/Montserrat-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'Montserrat-Medium';
+    src: url("../fonts/Montserrat-Medium.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'Montserrat-SemiBold';
+    src: url("../fonts/Montserrat-SemiBold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'Montserrat-Bold';
+    src: url("../fonts/Montserrat-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'OpenSans-SemiBold';
+    src: url("../fonts/OpenSans-SemiBold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'Montserrat-ExtraLight';
+    src: url("../fonts/Montserrat-ExtraLight.ttf") format("truetype");
+}
+
+.icon {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    mask-repeat: no-repeat;
+    mask-size: 100%;
+    mask-position: center;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: 100%;
+    -webkit-mask-position: center;
+    background-color: #2D3A45;
+    vertical-align: middle;
+}
+
+.icon-map {
+    mask-image: url("../img/svg/map.svg");
+    -webkit-mask-image: url("../img/svg/map.svg");
+    background-color: #000000;
+    width: 17px;
+    height: 35px;
+}
+
+.icon-message {
+    mask-image: url("../img/svg/message.svg");
+    -webkit-mask-image: url("../img/svg/message.svg");
+    background-color: #000000;
+    width: 18px;
+    height: 18px;
+}
+
+.icon-phoneCall {
+    mask-image: url("../img/svg/phoneCall.svg");
+    -webkit-mask-image: url("../img/svg/phoneCall.svg");
+    background-color: #000000;
+    width: 18px;
+    height: 18px;
+}
+
+.icon-accardionArrow {
+    mask-image: url("../img/svg/accardionArrow.svg");
+    -webkit-mask-image: url("../img/svg/accardionArrow.svg");
+    background-color: #FEDC45;
+    width: 50px;
+    height: 50px;
+}
+
+.icon-twitter {
+    mask-image: url("../img/svg/twitter.svg");
+    -webkit-mask-image: url("../img/svg/twitter.svg");
+    background-color: #000000;
+    width: 27px;
+    height: 27px;
+}
+
+.icon-telegram {
+    mask-image: url("../img/svg/telegram.svg");
+    -webkit-mask-image: url("../img/svg/telegram.svg");
+    background-color: #000000;
+    width: 27px;
+    height: 27px;
+}
+
+.icon-instagram {
+    mask-image: url("../img/svg/instagram.svg");
+    -webkit-mask-image: url("../img/svg/instagram.svg");
+    background-color: #000000;
+    width: 27px;
+    height: 27px;
+}
+
+.icon-1workphone {
+    mask-image: url("../img/svg/1workphone.svg");
+    -webkit-mask-image: url("../img/svg/1workphone.svg");
+    background-color: #000000;
+    width: 60px;
+    height: 60px;
+}
+
+.icon-2workorder {
+    mask-image: url("../img/svg/22workorder.svg");
+    -webkit-mask-image: url("../img/svg/22workorder.svg");
+    background-color: #000000;
+    width: 50px;
+    height: 63px;
+}
+
+.icon-3workordercar {
+    mask-image: url("../img/svg/3workordercar.svg");
+    -webkit-mask-image: url("../img/svg/3workordercar.svg");
+    background-color: #000000;
+    width: 60px;
+    height: 40px;
+}
+
+.icon-4workordersearch {
+    mask-image: url("../img/svg/4workordersearch.svg");
+    -webkit-mask-image: url("../img/svg/4workordersearch.svg");
+    background-color: #000000;
+    width: 50px;
+    height: 50px;
+}
+
+.icon-5workweclean {
+    mask-image: url("../img/svg/5workweclean.svg");
+    -webkit-mask-image: url("../img/svg/5workweclean.svg");
+    background-color: #000000;
+    width: 50px;
+    height: 62.5px;
+}
+
+.icon-6workdry {
+    mask-image: url("../img/svg/6workdry.svg");
+    -webkit-mask-image: url("../img/svg/6workdry.svg");
+    background-color: #000000;
+    width: 57px;
+    height: 60px;
+}
+
+.icon-7workready {
+    mask-image: url("../img/svg/7workready.svg");
+    -webkit-mask-image: url("../img/svg/7workready.svg");
+    background-color: #000000;
+    width: 53px;
+    height: 58.3px;
+}
+
+.icon-arrowOneWeWork {
+    mask-image: url("../img/svg/arrowOneWeWork.svg");
+    -webkit-mask-image: url("../img/svg/arrowOneWeWork.svg");
+    background-color: #000000;
+    width: 43.95px;
+    height: 50.54px;
+}
+
+.icon-arrowTwoWeWork {
+    mask-image: url("../img/svg/arrowOneWeWork.svg");
+    -webkit-mask-image: url("../img/svg/arrowOneWeWork.svg");
+    background-color: #000000;
+    width: 43.95px;
+    height: 50.54px;
+    transform: rotate(-90deg);
+}
+
+.icon-phonecallblack {
+    mask-image: url("../img/svg/phonecallblack.svg");
+    -webkit-mask-image: url("../img/svg/phonecallblack.svg");
+    background-color: #000000;
+    width: 40px;
+    height: 39.93px;
+}
+
+.icon-chatblack {
+    mask-image: url("../img/svg/chatblack.svg");
+    -webkit-mask-image: url("../img/svg/chatblack.svg");
+    background-color: #000000;
+    width: 40px;
+    height: 39.93px;
+}
+
+/*Navigation start*/
+.navigationHeaderSecond {
+    padding-top: 18px;
+    padding-bottom: 18px;
+    background: #FEDC45;
+}
+
+.navigationHeaderSecond .navigationHeaderSecondFlex {
+    display: flex;
+    justify-content: center;
+}
+
+.navigationHeaderSecond .navigationHeaderSecondFlex .headerLinkOne {
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #000000;
+    font-family: 'Montserrat-SemiBold', sans-serif;
+    margin-left: 9px;
+    margin-right: 9px;
+}
+
+.navigationHaderBrandMain .navigationHaderBrandTitle {
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #000000;
+    font-family: 'Montserrat-ExtraLight', sans-serif;
+    text-transform: uppercase;
+}
+
+.navigationHaderFlex {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    height: 100%;
+    padding-top: 19px;
+    padding-bottom: 19px;
+}
+
+.navigationHeader .navigationHeaderBtnOne {
+    border: 1px solid #000000 !important;
+    box-sizing: border-box;
+    border-radius: 3px;
+    background: transparent;
+    padding: 6px 20px;
+    font-size: 17px;
+    line-height: 21px;
+    text-align: center;
+    color: #000000;
+    font-family: 'Montserrat-Medium', sans-serif;
+    transition: .2s;
+}
+
+.navigationHeader .navigationHeaderBtnOne:focus,
+.navigationHeader .navigationHeaderBtnOne:active {
+    border: 1px solid #ffe63f !important;
+    background: #ffe63f;
+    outline: none;
+}
+
+.navigationHeader .navigationHeaderBtnOne:hover {
+    border: 1px solid #ffe63f !important;
+    background: #ffe63f;
+}
+
+.navigationHeader .navigationHeaderBtnTwo {
+    box-sizing: border-box;
+    padding: 6px 20px;
+    font-size: 17px;
+    line-height: 21px;
+    text-align: center;
+    color: #000000;
+    font-family: 'Montserrat-Medium', sans-serif;
+    border-radius: 3px;
+    border: 1px solid #FEDC45 !important;
+    background: #FEDC45;
+    transition: .2s;
+}
+
+.navigationHeader .navigationHeaderBtnTwo:focus,
+.navigationHeader .navigationHeaderBtnTwo:active {
+    border: 1px solid #ffe63f !important;
+    background: #ffe63f;
+    outline: none;
+}
+
+.navigationHeader .navigationHeaderBtnTwo:hover {
+    border: 1px solid #ffe63f !important;
+    background: #ffe63f;
+}
+
+.mainSectionHeaderChats {
+    position: absolute;
+    right: 0;
+    bottom: 52.91px;
+    background: #FEDC45;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding: 9px 20px;
+}
+
+/*Navigation end*/
+
+/*Navigation sub start*/
+.navigationSecondSub {
+    z-index: 999;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay .navigationSecondSubLink {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay .navigationSecondSubLink:hover, .overlay .navigationSecondSubLink:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+    color: #818181;
+    text-decoration: none;
+}
+
+@media screen and (max-height: 450px) {
+    .overlay .navigationSecondSubLink {
+        font-size: 20px
+    }
+
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
+/*Navigation sub end*/
+
+/*Main Header Section start*/
+.mainSectionHeader {
+    width: 100%;
+    height: 600px;
+}
+
+.mainSectionHeaderImg {
+    width: 100%;
+    height: 100%;
+}
+
+.form-control:focus {
+    color: #000000;
+    background-color: transparent;
+    outline: none;;
+    box-shadow: none;
+}
+
+.mainSectionHeader .mainSectionHeaderMainInfo .form-control {
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000 !important;
+    font-family: 'Montserrat-Medium', sans-serif;
+}
+
+.mainSectionHeader .mainSectionHeaderMainInfo .mainSectionHeaderCardInput {
+    border: 2px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.3);
+    margin: 10px 6px;
+    height: 40px;
+}
+
+.mainSectionHeader .mainSectionHeaderMainInfo .mainSectionCardTitle {
+    font-size: 22px;
+    line-height: 27px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+    font-family: 'Montserrat-Medium', sans-serif;
+}
+
+.mainSectionHeader .mainSectionHeaderMainInfo .mainSectionCardSubTitle {
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #000000;
+    font-family: 'Montserrat-Regular', sans-serif;
+}
+
+.mainSectionHeader .mainSectionHeaderMainInfo .mainSectionHeaderCardBtn {
+    font-family: 'Montserrat-Medium', sans-serif;
+    font-size: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+    background: #FEDC45;
+    border: 1px solid #FEDC45;
+    box-sizing: border-box;
+    border-radius: 5px;
+    width: 100%;
+    height: 40px;
+    margin-left: 6px;
+    margin-right: 6px;
+}
+
+.mainSectionHeader .mainSectionHeaderMainInfo
+.mainSectionHeaderCardBtn:focus,
+.mainSectionHeaderCardBtn:active {
+    border: 1px solid #ffe63f;
+    background: #ffe63f;
+    outline: none;
+}
+
+.mainSectionHeader .mainSectionHeaderMainInfo
+.mainSectionHeaderCardBtn:hover {
+    border: 1px solid #ffe63f;
+    background: #ffe63f;
+}
+
+.mainSectionHeader .mainSectionHeaderMainInfo .mainSectionHeaderCard {
+    width: 572px;
+    min-height: 228px;
+    background: rgba(255, 255, 255, 0.3);
+    border: 2px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.mainSectionHeader .mainSectionHeaderMainInfo {
+    position: absolute;
+    bottom: 93px;
+}
+
+.mainSectionHeader .mainSectionHeaderTitle {
+    font-size: 55px;
+    line-height: 67px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-family: 'Montserrat-Bold', sans-serif;
+}
+
+.mainSectionHeader .mainSectionHeaderDesc {
+    font-size: 25px;
+    line-height: 30px;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    font-family: 'Montserrat-Medium', sans-serif;
+    width: 80%;
+}
+
+.flexCardForm1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.flexCardForm2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.mainSectionHeaderBack {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    opacity: .3;
+}
+
+/*Main Header Section end*/
+
+/*About our company start*/
+.aboutOurCompany {
+    margin-top: 150px;
+}
+
+.aboutOurCompany .directorFullName {
+    font-size: 16px;
+    line-height: 133.1%;
+    color: #000000;
+    font-family: 'Montserrat-SemiBold', sans-serif;
+}
+
+.aboutOurCompany .directorLevel {
+    font-size: 16px;
+    line-height: 133.1%;
+    letter-spacing: 0.02em;
+    color: #757575;
+    font-family: 'Montserrat-Regular', sans-serif;
+
+}
+
+.aboutOurCompany .aboutCompanyInfoTitle {
+    font-size: 38px;
+    line-height: 46px;
+    color: #000000;
+    font-family: 'Montserrat-Medium', sans-serif;
+}
+
+.aboutOurCompany .aboutCompanyInfoDesc {
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+    font-family: 'Montserrat-Regular', sans-serif;
+}
+
+.aboutOurCompany .aboutCompanyInfoBtn {
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #000000;
+    font-family: 'Montserrat-Medium', sans-serif;
+    background: #FEDC45;
+    border-radius: 3px;
+    border: none;
+    padding: 11px 14px;
+    margin-top: 20px;
+}
+
+.aboutOurCompany .aboutCompanyInfoBtn:focus,
+.aboutCompanyInfoBtn:active {
+    outline: none;
+    border: none;
+    background: #ffe63f;
+}
+
+.aboutOurCompany .aboutCompanyInfoBtn:hover {
+    background: #ffe63f;
+}
+
+.aboutOurCompany .aboutOurCompanyColFlex {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.directorImg {
+    width: 100%;
+}
+
+.aboutCompanyInfo {
+    margin-top: 60px;
+}
+
+/*About our company end*/
+
+/*Why choose us start*/
+.whyChooseUs {
+    padding-top: 40px;
+    padding-bottom: 93px;
+    background: #FFF6A1;
+}
+
+.whyChooseUs .whyChooseUsFlexImg {
+    display: flex;
+    justify-content: center;
+}
+
+.whyChooseUs .whyChooseUsFlex {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+}
+
+.whyChooseUs .whyChooseUsDesc {
+    margin-top: 30px;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+    font-family: 'Montserrat-Medium', sans-serif;
+}
+
+/*Why choose us end*/
+
+/*Our services start*/
+.ourServices {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.ourServices .ourServicesCol {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.ourServices .ourServicesTitle {
+    margin-top: 20px;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #000000;
+    font-family: 'Montserrat-SemiBold', sans-serif;
+}
+
+.ourServices .ourBlogSectionImgsMain {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.ourServices .ourBlogSectionImgs {
+    width: 285px;
+    height: 285px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+
+.ourServices .ourServicesTitleSubMain {
+    height: 32px;
+}
+.ourServices .ourServicesTitleSub {
+    font-size: 18px;
+    text-align: center;
+    color: #848484;
+    font-family: 'Montserrat-Medium', sans-serif;
+}
+
+.ourServices .ourServicesTitleRubl {
+    padding-top: 4px;
+    padding-bottom: 4px;
+    font-size: 18px;
+    color: #000000;
+    font-family: 'Montserrat-SemiBold', sans-serif;
+    background: #FEDC45;
+    min-width: 70px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/*Our services end*/
+
+/*Our special suggestions start*/
+.ourSpecialSuggestions{
+    background: #FFF6A1;
+    padding-top: 40px;
+    padding-bottom: 68px;
+    margin-bottom: 100px;
+}
+.ourSpecialSuggestions .ourSpecialSuggestionsTitle{
+    font-family: 'Montserrat-Regular', sans-serif;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: #000000;
+    width: 60%;
+}
+.ourSpecialSuggestions .ourSpecialSuggestionsDesc {
+    font-family: 'Montserrat-Regular', sans-serif;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    color: #333333;
+    margin-top: 15px;
+}
+.ourSpecialGridContainer {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    margin-top: 42px;
+}
+.ourSpecialGridItems {
+    text-align: center;
+}
+/*Our special suggestions end*/
+
+/*How we work start*/
+.howWeWorkGridContainer .howWeWorkArrowFlex {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 30px;
+    transform: translate(0, 10px);
+}
+
+.howWeWorkGridContainer {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
+}
+
+.howWeWorkGridItem {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.howWeWork .howWeWorkBubble .howWeWorkBubbleSub {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.howWeWork {
+    margin-bottom: 100px;
+}
+
+.howWeWork .howWeWorkBubble {
+    width: 116px;
+    height: 116px;
+    border-radius: 50%;
+    background: #FEDC45;
+}
+
+.howWeWork .howWeWorkTitle {
+    font-family: 'Montserrat-SemiBold', sans-serif;
+    font-size: 18px;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: #000000;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 0;
+}
+
+.howWeWork .howWeWorkDesc {
+    margin-top: 5px;
+    font-family: 'Montserrat-Medium', sans-serif;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 0;
+}
+
+.howWeWork .howWeWorkFlex {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+/*How we work end*/
+
+/*What we use start*/
+
+.whatWeUse {
+    margin-bottom: 100px;
+}
+
+.whatWeUse .whatWeUseCard:hover {
+    filter: drop-shadow(0px 4px 25px rgba(0, 0, 0, 0.25));
+}
+
+.whatWeUse .whatWeUseCard {
+    filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.25));
+    box-shadow: inset 10px 10px 125px 76px #FEDC45;
+    border-radius: 5px;
+    border: none;
+}
+
+.whatWeUse .whatWeUseCol {
+    margin-bottom: 20px;
+}
+
+.whatWeUse .whatWeUseDesc {
+    font-family: 'Montserrat-Regular', sans-serif;
+    font-size: 14px;
+    line-height: 17px;
+    color: #63686A;
+    margin-top: 10px;
+}
+
+.whatWeUse .whatWeUseSubDesc {
+    font-family: 'Montserrat-Regular', sans-serif;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    margin-top: 10px;
+}
+
+.whatWeUse .whatWeUseTitle {
+    font-family: 'Montserrat-SemiBold', sans-serif;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+    margin-top: 30px;
+}
+
+.whatWeUse .whatWeUseImgMain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding: 20px 40px;
+}
+
+.whatWeUse .whatWeUseImg {
+    width: 70%;
+    height: 300px;
+}
+
+/*What we use end*/
+
+/*Work examples start*/
+.workExamplesSection {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-bottom: 100px;
+    background-color: #FFF6A1;
+}
+
+.workExamplesSection .workExamplesCol {
+    margin-bottom: 15px;
+}
+
+.workExamplesSection .workExamplesImgs {
+    border-radius: 5px;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+/*Work examples end*/
+
+/*what our clients say start*/
+.owl-carousel .owl-stage-outer {
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+.ourClientsSay .ourClientsCard .ourClientsCardFullName {
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #000000;
+    font-family: 'Montserrat-SemiBold', sans-serif;
+    margin-top: 22px;
+}
+
+.ourClientsSay .ourClientsCard .ourClientsCardDesc {
+    margin-top: 30px;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    text-transform: lowercase;
+    color: #000000;
+    font-family: 'Montserrat-Regular', sans-serif;
+}
+
+.ourClientsSay .ourClientsCard {
+    min-height: 440px;
+    background: #FEDC45;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    transition: .4s;
+    border: none;
+}
+.ourClientsSay .ourClientsCard:hover {
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+}
+
+.ourClientsSay .ourClientsCard .line {
+    border-radius: 7px;
+    height: 3px;
+    width: 80px;
+    background-color: #000000;
+    margin-top: 21px;
+}
+
+.ourClientsSay .ourClientsCard .ourClientsSayImgMain {
+    width: 126px;
+    height: 126px;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+}
+
+.ourClientsSay .ourClientsCard .ourClientsSayImg {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    transform: translate(3px, 3px);
+}
+
+/*what our clients say end*/
+.owlCarousel .owl-dots .owl-dot:focus,
+.owlCarousel .owl-dots .owl-dot:active{
+    outline:none;
+}
+.owlCarousel .owl-dots {
+    display: flex;
+    justify-content: center;
+}
+.owlCarousel .owl-dots .owl-dot{
+    padding: 8px !important;
+    margin-left: 3px;
+    margin-right: 3px;
+    background: #C4C4C4;
+    border-radius: 50%;
+}
+.owlCarousel .owl-dots .owl-dot.active{
+    background: #FBDF7A;
+}
+
+/*Frequently asked Questions start*/
+.frequentlyQuestionsSection {
+    /*margin-top: 100px;*/
+}
+
+.frequentlyQuestionsSection .questionsTitle {
+    font-family: 'Montserrat-Medium', sans-serif;
+    font-size: 41px;
+    line-height: 56px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #5F5F5F;
+}
+
+.frequentlyQuestionsSection .accordionCardHeader .title {
+    font-family: 'Montserrat-Medium', sans-serif;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+
+}
+
+.frequentlyQuestionsSection .accordion {
+    /*margin-top: 58px;*/
+    /*padding-left: 80px;*/
+    padding-right: 60px;
+}
+
+.accordionCardHeader .accicon {
+    float: right;
+    font-size: 20px;
+}
+
+.accordionCardHeader {
+    cursor: pointer;
+    border-bottom: none;
+    background: transparent;
+}
+
+.accordionCard {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: none;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+}
+
+.accordionCardBody {
+    font-family: 'Montserrat-Regular', sans-serif;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 20px !important;
+}
+
+.accordionCardHeader {
+    padding-left: 35px;
+    padding-right: 15px;
+}
+
+.accordionCardHeader .rotate-icon {
+    transition: .5s;
+    margin-top: -7px;
+}
+
+.accordionCardHeader:not(.collapsed) .icon-accardionArrow {
+    transition: .5s;
+    transform: rotate(-180deg);
+    background-color: #000000 !important;
+}
+
+.accordionCard > [aria-expanded="true"] {
+    background: #FEDC45;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+}
+
+/*Frequently asked Questions end*/
+
+/*Our masters section start*/
+.ourCertificate {
+    background-color: #FFF6A1;
+    padding-top: 40px;
+    padding-bottom: 50px;
+    margin-bottom: 100px;
+}
+
+.ourCertificate .ourCertificateUl {
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
+    list-style-type: none;
+    text-align: center;
+}
+
+.ourCertificate .ourCertificateImg {
+    width: 220px;
+    height: 307px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.ourCertificate .ourCertificateLi {
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/*Our masters section end*/
+
+/*Our masters section start*/
+.ourMasters .ourMastersFlexDiv {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.ourMasters .ourMastersFullName {
+    font-family: 'Montserrat-Medium', sans-serif;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.ourMasters .ourMastersExperience {
+    font-family: 'Montserrat-Regular', sans-serif;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.ourMasters {
+    margin-bottom: 45px;
+}
+
+.ourMasters .ourMastersCol {
+    padding-bottom: 50px;
+}
+
+.ourMasters .ourMastersImgMain {
+    width: 208px;
+    height: 208px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    background-color: #FEDC45;
+}
+
+.ourMasters .ourMastersImgMain .ourMastersImg {
+    width: 200px;
+    height: 200px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    object-fit: cover;
+    position: relative;
+    transform: translate(4px, 4px);
+}
+
+/*Our masters section end*/
+
+/*Our blog section start*/
+.ourBlogSection .ourBlogSectionImg {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.ourBlogSection
+.ourBlogSectionRow1TitleTwo {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.ourBlogSection
+.ourBlogSectionTitle {
+    width: 425px;
+}
+
+.ourBlogSection .ourBlogSectionSubCol1 {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.ourBlogSection .ourBlogSectionButton {
+    font-family: 'Montserrat-Medium', sans-serif;
+    background: #FEDC45;
+    border-radius: 3px;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+    padding: 14px 34px;
+    border: none;
+    text-transform: lowercase;
+}
+
+.ourBlogSection .ourBlogSectionButton:focus, .ourBlogSectionButton:active {
+    outline: none;
+    border: none !important;
+}
+
+.ourBlogSection .ourBlogSectionButton:hover {
+    background: #ffe63f;
+}
+
+.ourBlogSection .ourBlogSectionTitle {
+    font-family: 'Montserrat-SemiBold', sans-serif;
+    font-size: 24px;
+    line-height: 29px;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.ourBlogSection .ourBlogSectionDescription {
+    font-family: 'Montserrat-Regular', sans-serif;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+}
+
+.ourBlogSectionRow2 .ourBlogSectionRow2Col1 {
+    text-align: end;
+}
+
+/*Our blog section end*/
+
+/*Advertisement section start*/
+.advertisementSection1 {
+    position: relative;
+    background-image: url("../img/1addvertisement.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    object-fit: cover;
+}
+
+.advertisementSection2 {
+    position: relative;
+    background-image: url("../img/2addvertisement.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    object-fit: cover;
+}
+
+.advertisementSection {
+    position: relative;
+    background-image: url("../img/3addvertisement.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    object-fit: cover;
+}
+
+.advertisementSection .advertisementSectionBac,
+.advertisementSection2 .advertisementSectionBac,
+.advertisementSection1 .advertisementSectionBac {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #000000;
+    opacity: .4;
+    width: 100%;
+    height: 100%;
+}
+
+.advertisementSectionTitleMain {
+    display: flex;
+    justify-content: center;
+}
+
+.advertisementSection .advertisementSectionDiv,
+.advertisementSection2 .advertisementSectionDiv,
+.advertisementSection1 .advertisementSectionDiv {
+    position: relative;
+    padding-bottom: 117px;
+    padding-top: 95px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.advertisementSection .advertisementSectionBtn,
+.advertisementSection2 .advertisementSectionBtn,
+.advertisementSection1 .advertisementSectionBtn {
+    background: #FEDC45;
+    border-radius: 3px;
+    font-size: 18px;
+    text-align: center;
+    color: #000000;
+    font-family: 'Montserrat-Medium-Regular', sans-serif;
+    padding: 14px 11px 14px 11px;
+    border: none;
+    transition: .2s;
+    margin-top: 82px;
+}
+
+.advertisementSection .advertisementSectionBtn:focus, .advertisementSectionBtn:active,
+.advertisementSection2 .advertisementSectionBtn:focus, .advertisementSectionBtn:active,
+.advertisementSection1 .advertisementSectionBtn:focus, .advertisementSectionBtn:active {
+    outline: none;
+    border: none !important;
+}
+
+.advertisementSection .advertisementSectionBtn:hover,
+.advertisementSection2 .advertisementSectionBtn:hover,
+.advertisementSection1 .advertisementSectionBtn:hover {
+    background: #ffe63f;
+}
+
+.advertisementSection .advertisementSectionDescMain,
+.advertisementSection2 .advertisementSectionDescMain,
+.advertisementSection1 .advertisementSectionDescMain {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.advertisementSection .advertisementSectionDesc,
+.advertisementSection2 .advertisementSectionDesc,
+.advertisementSection1 .advertisementSectionDesc {
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    font-family: 'Montserrat-Regular', sans-serif;
+    width: 65%;
+}
+
+.advertisementSection .advertisementSectionTitle,
+.advertisementSection2 .advertisementSectionTitle,
+.advertisementSection1 .advertisementSectionTitle {
+    font-size: 35px;
+    line-height: 43px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-family: 'Montserrat-SemiBold', sans-serif;
+}
+
+/*Advertisement section end*/
+
+/*Partners start*/
+.partnersSection .partnersImgsMainSub {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.partnersSection .partnersImgsRow {
+    margin-top: 40px;
+    margin-bottom: 90px;
+}
+
+.partnersSection .partnersImgsMain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.partnersSection .partnersImgs {
+    width: 80%;
+}
+
+/*Partners end*/
+
+/*Leave an application start*/
+
+.leaveAnApplication .cleanerImgMainBac {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #000000;
+    opacity: .4;
+}
+
+.leaveAnApplication .leaveAppColOne .cleanerBacImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.leaveAnApplication .leaveAppColOne .cleanerImg {
+    position: absolute;
+    width: 450px;
+    height: 600px;
+    bottom: 0;
+    margin-left: 60px;
+}
+
+.appMainTittle {
+    font-family: 'Montserrat-Medium', sans-serif;
+    font-size: 40px;
+    line-height: 49px;
+    text-align: center;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.leaveAnApplication {
+    margin-bottom: 100px;
+}
+
+.leaveAnApplication .leaveAppColTwo .leaveAppCardForm {
+    padding-top: 20px;
+}
+
+.leaveAnApplication .leaveAppColTwo .leaveAppCardForm .leaveAppCardInput {
+    border: 1px solid #848484;
+    box-sizing: border-box;
+    border-radius: 3px;
+    margin-top: 11px;
+    margin-bottom: 11px;
+}
+
+.leaveAnApplication .leaveAppColTwo .leaveAppCardForm .leaveAppCardTextArea {
+    border: 1px solid #848484;
+    box-sizing: border-box;
+    border-radius: 3px;
+    margin-top: 11px;
+    margin-bottom: 11px;
+    height: 160px;
+}
+
+.leaveAnApplication .leaveAppColTwo .leaveAppCardForm .leaveAppCardFormBtn {
+    background: #FEDC45;
+    border: 1px solid #FEDC45;
+    box-sizing: border-box;
+    border-radius: 3px;
+    width: 100%;
+    height: 50px;
+    font-size: 18px;
+    line-height: 22px;
+    font-family: 'Montserrat-Medium', sans-serif;
+    color: #000000;
+}
+
+.leaveAnApplication .leaveAppColTwo {
+    background: #FFF6A1;
+}
+
+.leaveAnApplication .leaveAppColTwo .leaveAppCard {
+    margin-top: 85px;
+    margin-bottom: 81px;
+    margin-left: 104px;
+}
+
+.leaveAnApplication .leaveAppColTwo .leaveAppCard {
+    width: 400px;
+    height: 435px;
+    border: none;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+/*Leave an application end*/
+
+/*Footer section start*/
+.footerSection .footerTitleMain {
+    font-family: 'Montserrat-Medium', sans-serif;
+    font-size: 40px;
+    line-height: 49px;
+    text-transform: uppercase;
+    color: #000000;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.footerSection {
+    background: #FEDC45;
+    padding-top: 57px;
+    padding-bottom: 63px;
+}
+
+.footerSection .footerFlex .footerLogo {
+    font-family: 'Montserrat-Medium', sans-serif;
+    font-size: 40px;
+    line-height: 49px;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.footerSection .footerFlex .footerDescription {
+    font-family: 'Montserrat-Medium', sans-serif;
+    font-size: 16px;
+    line-height: 117.7%;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.footerSection .footerFlex .footerDescription span {
+    font-family: 'Montserrat-Regular', sans-serif;
+    font-size: 16px;
+    line-height: 117.7%;
+    color: #000000;
+    text-transform: lowercase;
+}
+
+.footerSection .footerFlex {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.footerSection .footerTitle {
+    font-family: 'Montserrat-Medium', sans-serif;
+    font-size: 28px;
+    line-height: 130%;
+    color: #000000;
+}
+
+.footerSection .footerContactIcons {
+    margin-bottom: 4px;
+}
+
+.footerSection .footerContactIcons span {
+    margin-left: 4px;
+    font-family: 'Montserrat-Regular', sans-serif;
+    font-size: 18px;
+    line-height: 130%;
+    color: #000000;
+}
+
+.footerSectionSub {
+    background: #000000;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.footerSectionSub .footerSubTitle {
+    font-family: 'Montserrat-Medium', sans-serif;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FDFDFD;
+}
+
+.footerSection .footerLinkMain .footerLink {
+    display: block;
+    text-decoration: none;
+    font-size: 16px;
+    color: #000000;
+    font-family: 'Montserrat-Regular', sans-serif;
+    text-decoration: none;
+}
+
+/*Footer section end*/
+
+@media (min-width: 1600px) {
+    /*Navigation start*/
+    .navigationSecondSub {
+        display: none;
+    }
+    /*Navigation end*/
+
+}
+
+@media (max-width: 1600px) and (min-width: 1200px) {
+    /*Navigation start*/
+    .navigationSecondSub {
+        display: none;
+    }
+
+    /*Navigation end*/
+}
+
+@media (max-width: 1200px) and (min-width: 992px) {
+
+    /*Our services start*/
+    .ourServices .ourBlogSectionImgs {
+        width: 245px;
+        height: 245px;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+
+    .ourServices {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    /*Our services end*/
+    /*About our company start*/
+    .aboutOurCompany .aboutCompanyInfoTitle {
+        font-size: 30px;
+    }
+
+    .aboutOurCompany .aboutCompanyInfoDesc {
+        font-size: 12px;
+        line-height: 22px;
+    }
+
+    .aboutOurCompany .aboutCompanyInfoBtn {
+        font-size: 15px;
+        margin-top: 0;
+    }
+
+    /*About our company end*/
+    /*Navigation start*/
+    .navigationSecondSub {
+        display: none;
+    }
+
+    /*Navigation end*/
+    /*Main Header Section start*/
+    .mainSectionHeader .mainSectionHeaderTitle {
+        font-size: 35px;
+        line-height: 37px;
+    }
+
+    .mainSectionHeader .mainSectionHeaderDesc {
+        font-size: 20px;
+        line-height: 25px;
+        width: 100%;
+    }
+
+    .mainSectionHeader .mainSectionHeaderMainInfo .mainSectionHeaderCard {
+        width: 500px;
+    }
+
+    /*Main Header Section end*/
+    /*How we work start*/
+    .howWeWorkGridContainer {
+        grid-template-columns: auto auto auto auto auto auto;
+    }
+
+    /*How we work end*/
+    /*Frequently asked Questions start*/
+    .frequentlyQuestionsSection .accordion {
+        padding-right: 0px;
+    }
+
+    /*Frequently asked Questions end*/
+    /*Our masters section start*/
+    .ourMasters .ourMastersImgMain .ourMastersImg {
+        width: 150px;
+        height: 150px;
+        transform: translate(4px, 4px);
+    }
+
+    .ourMasters .ourMastersImgMain {
+        width: 158px;
+        height: 158px;
+    }
+
+    /*Our masters section end*/
+    /*Leave an application start*/
+    .leaveAnApplication .leaveAppColOne .cleanerImg {
+        width: 80%;
+        height: 90%;
+        bottom: 0;
+        margin-left: 0px;
+    }
+
+    .leaveAnApplication .leaveAppColTwo {
+        display: flex;
+        justify-content: center;
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+
+    .leaveAnApplication .leaveAppColTwo .leaveAppCard {
+        width: 80%;
+        height: 400px;
+    }
+
+    .leaveAnApplication .leaveAppColTwo .leaveAppCard {
+        margin-top: 45px;
+        margin-bottom: 61px;
+        margin-left: 0;
+    }
+
+    /*Leave an application end*/
+
+}
+
+@media (max-width: 992px) and (min-width: 765px) {
+    .appMainTittle {
+        font-size: 34px;
+        line-height: 49px;
+    }
+    /*Our special suggestions start*/
+    .ourSpecialSuggestions .ourSpecialSuggestionsTitle {
+        font-size: 21px;
+        line-height: 29px;
+        width: 70%;
+    }
+    .ourSpecialGridContainer {
+        margin-top: 0px;
+    }
+    .ourSpecialSuggestions {
+        padding-bottom: 40px;
+        margin-bottom: 40px;
+    }
+    /*Our special suggestions end*/
+
+
+    /*Our services start*/
+    .ourServices .ourBlogSectionImgs {
+        width: 245px;
+        height: 245px;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+
+    .ourServices {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .ourServices .ourServicesTitle {
+        margin-bottom: 20px;
+        font-size: 15px;
+    }
+
+    /*Our services end*/
+    /*Why choose us start*/
+    .whyChooseUs .whyChooseUsDesc {
+        margin-top: 15px;
+        font-size: 15px;
+        margin-bottom: 30px;
+    }
+
+    /*Why choose us end*/
+    /*About our company start*/
+    .aboutOurCompany {
+        margin-top: 20px;
+        padding-bottom: 40px;
+    }
+
+    .aboutOurCompany .aboutCompanyInfoBtn {
+        margin-top: 0;
+    }
+
+    /*About our company end*/
+    /*Main Header Section start*/
+    .mainSectionHeader .mainSectionHeaderTitle {
+        font-size: 35px;
+        line-height: 37px;
+    }
+
+    .mainSectionHeader .mainSectionHeaderDesc {
+        font-size: 20px;
+        line-height: 25px;
+        width: 90%;
+    }
+
+    .mainSectionHeader .mainSectionHeaderMainInfo .mainSectionHeaderCard {
+        width: 450px;
+    }
+
+    /*Main Header Section end*/
+    /*Navigation start*/
+    .overlay-content {
+        top: 15% !important;
+    }
+
+    .overlay .closebtn {
+        position: absolute;
+        top: 0;
+        right: 45px;
+        font-size: 40px;
+    }
+
+    .overlay-content {
+        position: relative;
+        top: 25%;
+        margin-top: 0px;
+    }
+
+    .overlay .navigationSecondSubLink {
+        font-size: 20px;
+    }
+
+    .navigationHaderFlex2 {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        justify-content: flex-start;
+    }
+
+    .navigationHeader .navigationHeaderBtnTwo {
+        margin-top: 15px;
+        padding: 6px 20px;
+        font-size: 16px;
+        margin-left: 0 !important;
+    }
+
+    .navigationHeader .navigationHeaderBtnOne {
+        padding: 6px 20px;
+        font-size: 16px;
+    }
+
+    .navigationHeaderSecond {
+        display: none;
+    }
+
+    .navigationHaderBrand2 {
+        display: none;
+    }
+
+    /*Navigation end*/
+    /*Navigation start*/
+    .navigationHeaderSecond {
+        display: none;
+    }
+
+    .navigationHaderBrand2 {
+        display: none;
+    }
+
+    /*Navigation end*/
+    /*How we work start*/
+    .howWeWorkGridContainer {
+        grid-template-columns: auto auto auto auto;
+    }
+
+    /*How we work end*/
+    /*What we use start*/
+    .whatWeUse .whatWeUseImg {
+        width: 100%;
+        height: 250px;
+    }
+
+    /*What we use end*/
+    /*Frequently asked Questions start*/
+    .frequentlyQuestionsSection .accordion {
+        padding-right: 0px;
+    }
+
+    /*Frequently asked Questions end*/
+    /*Our masters section start*/
+    .ourMasters .ourMastersImgMain .ourMastersImg {
+        width: 120px;
+        height: 120px;
+        transform: translate(4px, 4px);
+    }
+
+    .ourMasters .ourMastersImgMain {
+        width: 128px;
+        height: 128px;
+    }
+
+    /*Our masters section end*/
+    /*Advertisement section start*/
+    .advertisementSection .advertisementSectionDiv,
+    .advertisementSection2 .advertisementSectionDiv,
+    .advertisementSection1 .advertisementSectionDiv {
+        position: relative;
+        padding-bottom: 70px;
+        padding-top: 95px;
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+
+    .advertisementSection .advertisementSectionBtn,
+    .advertisementSection2 .advertisementSectionBtn,
+    .advertisementSection1 .advertisementSectionBtn {
+        margin-top: 42px !important;
+    }
+
+    /*Advertisement section end*/
+    /*Partners start*/
+    .partnersSection .partnersImgs {
+        width: 100%;
+    }
+
+    /*Partners end*/
+    /*Leave an application start*/
+    .leaveAnApplication .leaveAppColOne .cleanerImg {
+        width: 80%;
+        height: 90%;
+        bottom: 0;
+        margin-left: 0px;
+    }
+
+    .leaveAnApplication .leaveAppColTwo {
+        display: flex;
+        justify-content: center;
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+
+    .leaveAnApplication .leaveAppColTwo .leaveAppCard {
+        width: 85%;
+        height: 400px;
+    }
+
+    .leaveAnApplication .leaveAppColTwo .leaveAppCard {
+        margin-top: 45px;
+        margin-bottom: 61px;
+        margin-left: 0;
+    }
+
+    /*Leave an application end*/
+    /*Footer section start*/
+    .footerSection .footerLinkMain {
+        justify-content: flex-start !important;
+    }
+
+    .footerSection .footerFlex {
+        justify-content: flex-start !important;
+    }
+
+    .footerSection .footerTitle {
+        margin-top: 1rem;
+    }
+
+    /*Footer section end*/
+
+}
+
+@media (max-width: 765px) and (min-width: 576px) {
+
+    .appMainTittle {
+        font-size: 30px;
+        line-height: 39px;
+    }
+    /*Our special suggestions start*/
+    .ourSpecialSuggestions {
+        padding-bottom: 40px;
+        margin-bottom: 40px;
+    }
+    .ourSpecialGridContainer {
+        grid-template-columns: auto auto auto;
+        margin-top: 0px;
+    }
+    .ourSpecialSuggestions .ourSpecialSuggestionsTitle {
+        font-size: 21px;
+        line-height: 29px;
+        width: 80%;
+    }
+    /*Our special suggestions end*/
+
+
+    /*Our services start*/
+    .ourServices .ourBlogSectionImgs {
+        width: 245px;
+        height: 245px;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+
+    .ourServices {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .ourServices .ourServicesTitle {
+        margin-bottom: 20px;
+        font-size: 15px;
+    }
+
+    /*Our services end*/
+    /*Why choose us start*/
+    .whyChooseUs .whyChooseUsDesc {
+        margin-top: 15px;
+        font-size: 15px;
+        margin-bottom: 30px;
+    }
+
+    .whyChooseUs {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        background: #FFF6A1;
+    }
+
+    /*Why choose us end*/
+    /*About our company start*/
+    .aboutOurCompany {
+        margin-top: 20px;
+        padding-bottom: 40px;
+    }
+
+    .aboutOurCompany .aboutCompanyInfoBtn {
+        margin-top: 0;
+    }
+
+    /*About our company end*/
+    /*Main Header Section start*/
+    .mainSectionHeader .mainSectionHeaderTitle {
+        font-size: 35px;
+        line-height: 37px;
+    }
+
+    .mainSectionHeader .mainSectionHeaderDesc {
+        font-size: 20px;
+        line-height: 25px;
+        width: 90%;
+    }
+
+    .mainSectionHeader .mainSectionHeaderMainInfo .mainSectionHeaderCard {
+        width: 450px;
+    }
+
+    .mainSectionHeader .mainSectionHeaderMainInfo {
+        position: absolute;
+        bottom: 143px;
+    }
+
+    .mainSectionHeaderImg {
+        object-fit: cover;
+    }
+
+    .mainSectionHeaderChats {
+        bottom: 12.91px;
+    }
+
+    /*Main Header Section end*/
+    /*Navigation start*/
+    .overlay-content {
+        top: 15% !important;
+    }
+
+    .overlay .closebtn {
+        position: absolute;
+        top: 0;
+        right: 45px;
+        font-size: 40px;
+    }
+
+    .overlay-content {
+        position: relative;
+        top: 25%;
+        margin-top: 0px;
+    }
+
+    .overlay .navigationSecondSubLink {
+        font-size: 20px;
+    }
+
+    .navigationHaderFlex2 {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        justify-content: flex-start;
+    }
+
+    .navigationHeader .navigationHeaderBtnTwo {
+        margin-top: 15px;
+        padding: 6px 10px;
+        font-size: 12px;
+        margin-left: 0 !important;
+    }
+
+    .navigationHeader .navigationHeaderBtnOne {
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+
+    .navigationHeaderSecond {
+        display: none;
+    }
+
+    .navigationHaderBrand2 {
+        display: none;
+    }
+
+    /*Navigation end*/
+    /*Navigation start*/
+    .navigationHeaderSecond {
+        display: none;
+    }
+
+    .navigationHaderBrand2 {
+        display: none;
+    }
+
+    /*Navigation end*/
+    /*How we work start*/
+    .howWeWorkGridContainer .howWeWorkArrowFlex {
+        display: none !important;
+    }
+
+    .howWeWorkGridContainer {
+        grid-template-columns: auto auto auto;
+    }
+
+    /*How we work end*/
+    /*What we use start*/
+    .whatWeUse .whatWeUseImg {
+        width: 100%;
+        height: 250px;
+    }
+
+    /*What we use end*/
+    /*Frequently asked Questions start*/
+    .frequentlyQuestionsSection .frequentlyQuestionsCleaner {
+        display: flex;
+        justify-content: center;
+    }
+
+    .frequentlyQuestionsSection .accordion {
+        padding-right: 0px;
+    }
+
+    /*Frequently asked Questions end*/
+    /*Our masters section start*/
+    .ourMasters .ourMastersFlexDiv {
+        justify-content: center;
+    }
+
+    /*Our masters section end*/
+    /*Advertisement section start*/
+    .advertisementSection .advertisementSectionDiv,
+    .advertisementSection2 .advertisementSectionDiv,
+    .advertisementSection1 .advertisementSectionDiv {
+        position: relative;
+        padding-bottom: 70px;
+        padding-top: 95px;
+        margin-top: 70px;
+        margin-bottom: 70px;
+    }
+
+    .advertisementSection .advertisementSectionTitle,
+    .advertisementSection2 .advertisementSectionTitle,
+    .advertisementSection1 .advertisementSectionTitle {
+        font-size: 28px;
+    }
+
+    .advertisementSection .advertisementSectionDesc,
+    .advertisementSection2 .advertisementSectionDesc,
+    .advertisementSection1 .advertisementSectionDesc {
+        width: 85%;
+    }
+
+    .advertisementSection .advertisementSectionBtn,
+    .advertisementSection2 .advertisementSectionBtn,
+    .advertisementSection1 .advertisementSectionBtn {
+        font-size: 16px;
+        padding: 11px;
+        margin-top: 42px !important;
+    }
+
+    /*Advertisement section end*/
+    /*Partners start*/
+    .partnersSection .partnersImgs {
+        width: 60%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    /*Partners end*/
+    /*Leave an application start*/
+    .leaveAnApplication {
+        margin-bottom: 20px;
+    }
+
+    .leaveAnApplication .leaveAppColOne .cleanerImg {
+        width: 70%;
+        height: 90%;
+        bottom: 0;
+        margin-left: 20px;
+    }
+
+    .leaveAnApplication .leaveAppColTwo {
+        display: flex;
+        justify-content: center;
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+
+    .leaveAnApplication .leaveAppColTwo .leaveAppCard {
+        width: 70%;
+    }
+
+    .leaveAnApplication .leaveAppColTwo .leaveAppCard {
+        margin-top: 45px;
+        margin-bottom: 61px;
+        margin-left: 0;
+    }
+
+    /*Leave an application end*/
+    /*Footer section start*/
+    .footerSection .footerLinkMain {
+        justify-content: flex-start !important;
+    }
+
+    .footerSection .footerFlex {
+        justify-content: flex-start !important;
+    }
+
+    .footerSection .footerTitle {
+        margin-top: 1rem;
+    }
+
+    /*Footer section end*/
+}
+
+@media only screen and (max-width: 576px) and (min-width: 320px) {
+
+    .appMainTittle {
+        font-size: 30px;
+        line-height: 39px;
+    }
+    /*Our special suggestions start*/
+    .ourSpecialSuggestions {
+        padding-bottom: 40px;
+        margin-bottom: 40px;
+    }
+    .ourSpecialGridContainer {
+        grid-template-columns: auto;
+        margin-top: 0px;
+    }
+    .ourSpecialSuggestions .ourSpecialSuggestionsTitle {
+        font-size: 21px;
+        line-height: 29px;
+        width: 100%;
+    }
+    /*Our special suggestions end*/
+
+
+    /*Our services start*/
+    .ourServices {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .ourServices .ourBlogSectionImgs {
+        width: 245px;
+        height: 245px;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+
+    .ourServices .ourServicesTitle {
+        margin-bottom: 20px;
+        font-size: 15px;
+    }
+
+    /*Our services end*/
+    /*Why choose us start*/
+    .whyChooseUs .whyChooseFlexImg {
+        width: 30%;
+    }
+
+    .whyChooseUs .whyChooseUsDesc {
+        margin-top: 15px;
+        font-size: 15px;
+        margin-bottom: 30px;
+    }
+
+    .whyChooseUs {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        background: #FFF6A1;
+    }
+
+    /*Why choose us end*/
+    /*About our company start*/
+    .aboutOurCompany {
+        margin-top: 20px;
+        padding-bottom: 40px;
+    }
+
+    .aboutOurCompany .aboutOurCompanyColFlex {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: flex-start;
+        height: 100%;
+    }
+
+    .aboutOurCompany .directorFullName {
+        margin-top: 20px;
+    }
+
+    .aboutOurCompany .aboutCompanyInfoTitle {
+        font-size: 30px;
+    }
+
+    .aboutOurCompany .aboutCompanyInfoDesc {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .aboutOurCompany .aboutCompanyInfoBtn {
+        margin-top: 0;
+    }
+
+    .aboutOurCompany .aboutCompanyInfoBtn {
+        font-size: 14px;
+    }
+
+    .aboutCompanyInfo {
+        margin-top: 20px;
+    }
+
+    /*About our company end*/
+    /*Main Header Section start*/
+    .mainSectionHeader .mainSectionHeaderTitle {
+        font-size: 23px;
+        line-height: 30px;
+    }
+
+    .mainSectionHeader .mainSectionHeaderDesc {
+        font-size: 16px;
+        line-height: 22px;
+        width: 100%;
+    }
+
+    .mainSectionHeader .mainSectionHeaderMainInfo .mainSectionHeaderCard {
+        width: 100%;
+    }
+
+    .mainSectionHeader .mainSectionHeaderMainInfo {
+        position: absolute;
+        bottom: 143px;
+        padding-right: 15px;
+    }
+
+    .mainSectionHeaderImg {
+        object-fit: cover;
+    }
+
+    .mainSectionHeaderChats {
+        bottom: 12.91px;
+    }
+
+    .flexCardForm1 {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .flexCardForm2 {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .mainSectionHeader {
+        width: 100%;
+        height: 750px;
+    }
+
+    .mainSectionHeader .mainSectionHeaderMainInfo .mainSectionCardTitle {
+        font-size: 17px;
+    }
+
+    /*Main Header Section end*/
+    /*Navigation start*/
+    .overlay-content {
+        top: 15% !important;
+    }
+
+    .overlay .closebtn {
+        position: absolute;
+        top: 0;
+        right: 45px;
+        font-size: 40px;
+    }
+
+    .overlay-content {
+        position: relative;
+        top: 25%;
+        margin-top: 0px;
+    }
+
+    .overlay .navigationSecondSubLink {
+        font-size: 20px;
+    }
+
+    .navigationHaderFlex2 {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        justify-content: flex-start;
+    }
+
+    .navigationHeader .navigationHeaderBtnTwo {
+        margin-top: 15px;
+        padding: 6px 10px;
+        font-size: 12px;
+        margin-left: 0 !important;
+    }
+
+    .navigationHeader .navigationHeaderBtnOne {
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+
+    .navigationHeaderSecond {
+        display: none;
+    }
+
+    .navigationHaderBrand2 {
+        display: none;
+    }
+
+    /*Navigation end*/
+    /*How we work start*/
+    .howWeWorkGridContainer .howWeWorkArrowFlex {
+        display: none !important;
+    }
+
+    .howWeWorkGridContainer {
+        grid-template-columns: auto;
+    }
+
+    /*How we work end*/
+    /*What we use start*/
+    .whatWeUse .whatWeUseImg {
+        width: 70%;
+        height: 250px;
+    }
+
+    /*What we use end*/
+    /*Frequently asked Questions start*/
+    .frequentlyQuestionsSection .frequentlyQuestionsCleaner {
+        display: flex;
+        justify-content: center;
+    }
+
+    .frequentlyQuestionsSection .accordionCardHeader .title {
+        font-size: 15px;
+    }
+
+    .icon-accardionArrow {
+        width: 30px;
+        height: 30px;
+    }
+
+    .accordionCardHeader {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .accordionCardBody {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .frequentlyQuestionsSection .accordion {
+        padding-right: 0px;
+    }
+
+    /*Frequently asked Questions end*/
+    /*Our masters section start*/
+    .ourMasters .ourMastersImgMain .ourMastersImg {
+        width: 180px;
+        height: 180px;
+        transform: translate(4px, 4px);
+    }
+
+    .ourMasters .ourMastersImgMain {
+        width: 188px;
+        height: 188px;
+    }
+
+    .ourMasters .ourMastersInfo {
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    .ourMasters .ourMastersFlexDiv {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    /*Our masters section end*/
+    .ourBlogSection .ourBlogSectionTitle {
+        width: 100%;
+    }
+
+    .ourBlogSection .ourBlogSectionTitle {
+        font-size: 16px;
+        line-height: 25px;
+    }
+
+    .ourBlogSection .ourBlogSectionTitle {
+        margin-top: 15px;
+    }
+
+    .ourBlogSection .ourBlogSectionRow1TitleTwo {
+        justify-content: flex-start;
+    }
+
+    .ourBlogSection .ourBlogSectionRow2 .ourBlogSectionRow2Col1 {
+        order: 2;
+    }
+
+    .ourBlogSection .ourBlogSectionRow2 .ourBlogSectionRow2Col2 {
+        order: 1;
+    }
+
+    .ourBlogSectionRow2 .ourBlogSectionRow2Col1 {
+        text-align: left;
+    }
+
+    /*Advertisement section start*/
+    .advertisementSection .advertisementSectionDiv,
+    .advertisementSection2 .advertisementSectionDiv,
+    .advertisementSection1 .advertisementSectionDiv {
+        position: relative;
+        padding-bottom: 30px;
+        padding-top: 35px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .advertisementSection .advertisementSectionBtn,
+    .advertisementSection2 .advertisementSectionBtn,
+    .advertisementSection1 .advertisementSectionBtn {
+    }
+
+    .advertisementSection .advertisementSectionTitle,
+    .advertisementSection2 .advertisementSectionTitle,
+    .advertisementSection1 .advertisementSectionTitle {
+        font-size: 22px;
+        line-height: 32px;
+    }
+
+    .advertisementSection .advertisementSectionDesc,
+    .advertisementSection2 .advertisementSectionDesc,
+    .advertisementSection1 .advertisementSectionDesc {
+        width: 100%;
+    }
+
+    .advertisementSection .advertisementSectionBtn,
+    .advertisementSection2 .advertisementSectionBtn,
+    .advertisementSection1 .advertisementSectionBtn {
+        font-size: 16px;
+        padding: 11px;
+        margin-top: 42px !important;
+    }
+
+    /*Advertisement section end*/
+    /*Partners start*/
+    .partnersSection .partnersImgs {
+        width: 40%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    /*Partners end*/
+    /*Leave an application start*/
+    .appMainTittle {
+        font-size: 27px;
+        line-height: 35px;
+    }
+
+    .leaveAnApplication {
+        margin-bottom: 20px;
+    }
+
+    .leaveAnApplication .leaveAppColOne .cleanerImg {
+        width: 60%;
+        height: 80%;
+        bottom: 0;
+        margin-left: 40px;
+    }
+
+    .leaveAnApplication .leaveAppColTwo {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+
+    .leaveAnApplication .leaveAppColTwo .leaveAppCard {
+        width: 100%;
+    }
+
+    .leaveAnApplication .leaveAppColTwo .leaveAppCard {
+        margin-top: 45px;
+        margin-bottom: 61px;
+        margin-left: 0;
+    }
+
+    /*Leave an application end*/
+    /*Footer section start*/
+    .footerSection .footerTitleMain {
+        font-size: 27px;
+        line-height: 35px;
+    }
+
+    .footerSection .footerFlex .footerLogo {
+        font-size: 27px;
+        line-height: 35px;
+    }
+
+    .footerSection .footerTitle {
+        font-size: 25px;
+    }
+
+    .footerSection {
+        background: #FEDC45;
+        padding-top: 49px;
+        padding-bottom: 43px;
+    }
+
+    .footerSection .footerLinkMain {
+        justify-content: flex-start !important;
+    }
+
+    .footerSection .footerFlex {
+        justify-content: flex-start !important;
+    }
+
+    .footerSectionSub .footerSubTitle {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .footerSection .footerTitle {
+        margin-top: 1rem;
+    }
+
+    /*Footer section end*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
